@@ -7,6 +7,8 @@ body {
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: rgb(11, 17, 27);
+  color: rgb(170, 178, 192)
 }
 
 #root {
