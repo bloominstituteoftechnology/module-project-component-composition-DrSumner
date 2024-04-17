@@ -1,4 +1,29 @@
 import React from "react";
+import styled from "styled-components";
+
+
+const StyledFooter = styled.div`
+
+h4{
+    text-align:center;
+    padding-bottom:2px
+}
+p{
+    padding-left:1cm;
+    
+    
+}
+img{
+    display:flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    
+    
+}
+`
+
 
 const Footer = (props) => {
     const data = props
@@ -8,7 +33,7 @@ const Footer = (props) => {
     //console.log(data.data)
 
     return (
-        <div>
+        <StyledFooter>
             <img
           alt='Photo of the day'
           className='post-image'
@@ -21,9 +46,9 @@ const Footer = (props) => {
         Image Credit & Copyright: {data.data.copyright} 
         </h4>
         <p>
-            explanation: {exp}
+            Explanation: {exp}
         </p>
-        </div>
+        </StyledFooter>
     )
 }
 
